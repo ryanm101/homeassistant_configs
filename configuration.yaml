@@ -14,7 +14,7 @@ config:
 map:
 http:
   api_password: !secret http_passwd 
-  # base_url: example.duckdns.org:8123
+  base_url: !secret http_base_url
 updater:
   # include_used_components: true
 discovery:
@@ -46,6 +46,10 @@ google_assistant:
   api_key: !secret gha_api_key
   expose_by_default: true
   
+media_player:
+  - platform: spotify
+    client_id: !secret spotify_client_id
+    client_secret: !secret spotify_client_secret
 
 device_tracker: !include device_tracker.yaml
 zone: !include zones.yaml
