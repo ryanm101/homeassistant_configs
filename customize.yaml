@@ -2,18 +2,3 @@ device_tracker.laura_phone:
   friendly_name: Laura Phone
 device_tracker.ryan_phone:
   friendly_name: Ryan Phone
-
-##### Hide Excess sensors ####
-
-# Mancave Door Sensor
-sensor.door_sensor_*:
-  hidden: true
-
-# Wallwart Bedroom
-sensor.aeotec_wallwart_*:
-  hidden: true
-
-# Backroom PIR
-sensor.backroom_pir_*:
-  hidden: true
-
