@@ -1,0 +1,50 @@
+
+
+den_view:
+  view: yes
+  name: Den
+  entities:
+    - binary_sensor.backroom_pir_sensor
+    - switch.aeotec_wallwart_2_switch
+    - sensor.backroom_pir_luminance
+
+googlehome_view:
+  view: yes
+  name: GoogleHome
+  entities:
+    - group.minis
+
+other_view:
+  name: Other
+  view: yes
+  entities:
+    - group.secureids
+
+#################
+Family:
+  entities:
+    - device_tracker.ryan_phone
+    - device_tracker.laura_phone
+
+Door Sensors:
+  entities:
+    - binary_sensor.door_sensor_1_sensor
+
+SecureIDs:
+  entities:
+    - sensor.door_sensor_1_sourcenodeid
+    - sensor.backroom_pir_sourcenodeid
+
+Motion Sensors:
+  entities:
+    - binary_sensor.backroom_pir_sensor
+
+Light Levels:
+  entities:
+    - sensor.backroom_pir_luminance
+
+Minis:
+  entities:
+    - media_player.den_speaker
+    - media_player.man_cave_speaker
+    - media_player.master_bedroom_speaker

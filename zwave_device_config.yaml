@@ -1,0 +1,6 @@
+zwave._:
+  ignored: true
+  polling_intensity: 0
+zwave.door_sensor_1:
+  ignored: false
+  polling_intensity: 0

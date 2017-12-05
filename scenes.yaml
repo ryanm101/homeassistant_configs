@@ -1,0 +1,7 @@
+- name: backroom lights on
+  entities:
+    switch.aeotec_wallwart_2_switch: on
+
+- name: backroom lights off
+  entities:
+    switch.aeotec_wallwart_2_switch: off

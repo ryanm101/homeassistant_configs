@@ -1,0 +1,42 @@
+- name: Home
+  latitude: !secret home_lat
+  longitude: !secret home_long
+  radius: 50
+  icon: mdi:home
+
+- name: RyanWork
+  latitude: !secret rw_lat
+  longitude: !secret rw_long
+  radius: 100
+  icon: mdi:worker
+
+#- name: LauraWork
+#  latitude: !secret lw_lat
+#  longitude: !secret lw_long
+#  radius: 100
+#  icon: mdi:worker
+
+- name: RyanUSOffice
+  latitude: !secret rw_usoffice_lat
+  longitude: !secret rw_usoffice_long
+  radius: 100
+  icon: mdi:worker
+
+- name: RyanDubOffice
+  latitude: !secret rw_duboffice_lat
+  longitude: !secret rw_duboffice_long
+  radius: 100
+  icon: mdi:worker
+
+- name: RyanUSHotel
+  latitude: !secret pdc_hotel_lat
+  longitude: !secret pdc_hotel_long
+  radius: 100
+  icon: mdi:home
+
+- name: RyanDubHotel
+  latitude: !secret dub_hotel_lat
+  longitude: !secret dub_hotel_long
+  radius: 100
+  icon: mdi:home
+

@@ -1,0 +1,54 @@
+homeassistant:
+  name: Home
+  latitude: !secret home_lat
+  longitude: !secret home_long
+  elevation: 0
+  unit_system: metric
+  time_zone: Europe/London
+  customize: !include customize.yaml
+
+frontend:
+config:
+map:
+http:
+  api_password: !secret http_passwd 
+  # base_url: example.duckdns.org:8123
+updater:
+  # include_used_components: true
+discovery:
+history:
+logbook:
+sun:
+
+zwave:
+  usb_path: /dev/ttyACM0
+
+weather:
+  - platform: yweather
+
+# Text to speech
+tts:
+  - platform: google
+
+mqtt:
+  broker: !secret mqtt_broker
+  port: !secret mqtt_port
+  client_id: !secret mqtt_client_id
+  username: !secret mqtt_username
+  password: !secret mqtt_password
+
+google_assistant:
+  project_id: !secret gha_proj_id
+  client_id: !secret gha_client_id
+  access_token: !secret gha_access_tok
+  api_key: !secret gha_api_key
+  expose_by_default: true
+  
+
+device_tracker: !include device_tracker.yaml
+zone: !include zones.yaml
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+sensor: !include sensors.yaml
+scene: !include scenes.yaml

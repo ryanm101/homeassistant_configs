@@ -1,0 +1,52 @@
+device_tracker.laura_phone:
+  friendly_name: Laura Phone
+device_tracker.ryan_phone:
+  friendly_name: Ryan Phone
+
+##### Hide Excess sensors ####
+
+# Mancave Door Sensor
+sensor.door_sensor_1_access_control:
+  hidden: true
+sensor.door_sensor_1_alarm_level:
+  hidden: true
+sensor.door_sensor_1_alarm_type:
+  hidden: true
+sensor.door_sensor_1_burglar:
+  hidden: true
+
+# Wallwart Bedroom
+sensor.aeotec_wallwart_1_current:
+  hidden: true
+sensor.aeotec_wallwart_1_energy:
+  hidden: true
+sensor.aeotec_wallwart_1_power:
+  hidden: true
+sensor.aeotec_wallwart_1_previous_reading:
+  hidden: true
+sensor.aeotec_wallwart_1_prevreading:
+  hidden: true
+sensor.aeotec_wallwart_1_voltage:
+  hidden: true
+
+# Wallwart Backroom
+sensor.aeotec_wallwart_2_current:
+  hidden: true
+sensor.aeotec_wallwart_2_energy:
+  hidden: true
+sensor.aeotec_wallwart_2_power:
+  hidden: true
+sensor.aeotec_wallwart_2_previous_reading:
+  hidden: true
+sensor.aeotec_wallwart_2_voltage:
+  hidden: true
+
+# Backroom PIR
+sensor.backroom_pir_burglar:
+  hidden: true
+sensor.backroom_pir_alarm_type:
+  hidden: true
+sensor.backroom_pir_alarm_level:
+  hidden: true
+
+
