@@ -20,6 +20,17 @@ updater:
 discovery:
 history:
 logbook:
+
+influxdb:
+  host: !secret influxdb_host
+  username: !secret influxdb_usr
+  password: !secret influxdb_pass
+
+recorder:
+  db_url: !secret pg_db_url
+  #purge_interval: 10
+  #purge_keep_days: 90
+
 sun:
 
 zwave:
