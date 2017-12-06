@@ -5,3 +5,11 @@
 - name: backroom lights off
   entities:
     switch.aeotec_wallwart_2_switch: off
+
+- name: bedroom lights on
+  entities:
+    switch.aeotec_wallwart_1_switch: on
+
+- name: bedroom lights off
+  entities:
+    switch.aeotec_wallwart_1_switch: off

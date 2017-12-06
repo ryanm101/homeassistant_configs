@@ -31,3 +31,51 @@
   action:
     service: homeassistant.turn_on
     entity_id: scene.backroom_lights_off
+
+- alias: "Bedroom Lights on"
+  trigger:
+    - platform: time
+      at: '06:00:00'
+  condition:
+    condition: time
+    weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+  action:
+    service: homeassistant.turn_on
+    entity_id: scene.bedroom_lights_on
+
+- alias: "Bedroom Lights off"
+  trigger:
+    platform: state
+    entity_id: switch.aeotec_wallwart_1_switch
+    to: 'on'
+    for:
+      hours: 0
+      minutes: 20
+      seconds: 0
+  condition:
+    condition: or
+    conditions:
+      - condition: time
+        after: '00:00:00'
+        before: '06:00:00'
+      - condition: time
+        after: '08:00:00'
+        before: '18:00:00'
+  action:
+    service: homeassistant.turn_on
+    entity_id: scene.bedroom_lights_off
+
+
+
+
+
+
+
+
+
+
