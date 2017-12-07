@@ -2,3 +2,10 @@ device_tracker.laura_phone:
   friendly_name: Laura Phone
 device_tracker.ryan_phone:
   friendly_name: Ryan Phone
+
+sensor.man_cave_multisensor_burglar:
+  hidden: true
+sensor.man_cave_multisensor_luminance:
+  hidden: true
+sensor.man_cave_multisensor_ultraviolet:
+  hidden: true

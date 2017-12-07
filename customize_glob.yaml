@@ -11,3 +11,6 @@
 "sensor.backroom_pir_*":
   hidden: true
 
+# ManCaveMultisensor
+"sensor.man_cave_multisensor_alarm*":
+  hidden: true

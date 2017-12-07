@@ -34,14 +34,22 @@ SecureIDs:
   entities:
     - sensor.door_sensor_1_sourcenodeid
     - sensor.backroom_pir_sourcenodeid
+    - sensor.man_cave_multisensor_sourcenodeid
 
 Motion Sensors:
   entities:
     - binary_sensor.backroom_pir_sensor
+    - binary_sensor.man_cave_multisensor_sensor
+
+Temperature Sensors:
+  entities:
+    - sensor.man_cave_multisensor_temperature
+    - sensor.man_cave_multisensor_relative_humidity
 
 Light Levels:
   entities:
     - sensor.backroom_pir_luminance
+    - sensor.man_cave_multisensor_luminance
 
 Minis:
   entities:
