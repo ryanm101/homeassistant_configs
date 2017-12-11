@@ -8,6 +8,15 @@ den_view:
     - switch.aeotec_wallwart_2_switch
     - sensor.backroom_pir_luminance
 
+man_cave_view:
+  view: yes
+  name: Man Cave
+  entities:
+    - group.wallwart_3
+    - group.man_cave_bin_sensors
+    - group.man_cave_sensors
+
+
 googlehome_view:
   view: yes
   name: GoogleHome
@@ -17,8 +26,10 @@ googlehome_view:
 other_view:
   name: Other
   view: yes
+  icon: mdi:exclamation
   entities:
     - group.secureids
+    - group.all_automations
 
 #################
 Family:
@@ -56,3 +67,27 @@ Minis:
     - media_player.den_speaker
     - media_player.man_cave_speaker
     - media_player.master_bedroom_speaker
+
+###################### MAN CAVE GROUPS #######################
+man_cave_sensors:
+  name: Sensors
+  entities:
+    - sensor.man_cave_multisensor_temperature
+    - sensor.man_cave_multisensor_relative_humidity
+
+man_cave_bin_sensors:
+  name: Binary Sensors
+  entities:
+    - binary_sensor.man_cave_multisensor_sensor
+    - binary_sensor.door_sensor_1_sensor
+
+WallWart 3:
+  name: Man Cave Radiator
+  entities:
+    - switch.tkbhome_wallwart_3_switch
+    - sensor.tkbhome_wallwart_3_current
+    - sensor.tkbhome_wallwart_3_energy
+    - sensor.tkbhome_wallwart_3_power
+    - sensor.tkbhome_wallwart_3_power_factor
+    - sensor.tkbhome_wallwart_3_voltage
+

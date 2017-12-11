@@ -9,3 +9,9 @@ sensor.man_cave_multisensor_luminance:
   hidden: true
 sensor.man_cave_multisensor_ultraviolet:
   hidden: true
+sensor.man_cave_multisensor_sourcenodeid:
+  hidden: true
+
+group.secureids:
+  hidden: true
+
