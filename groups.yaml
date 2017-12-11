@@ -1,12 +1,20 @@
 
 
-den_view:
+master_bedroom:
   view: yes
-  name: Den
+  name: Master Bedroom
+  entities:
+    - switch.aeotec_wallwart_1_switch
+    - media_player.master_bedroom_speaker
+
+backroom_view:
+  view: yes
+  name: Backroom
   entities:
     - binary_sensor.backroom_pir_sensor
     - switch.aeotec_wallwart_2_switch
     - sensor.backroom_pir_luminance
+    - media_player.den_speaker
 
 man_cave_view:
   view: yes
@@ -15,6 +23,7 @@ man_cave_view:
     - group.wallwart_3
     - group.man_cave_bin_sensors
     - group.man_cave_sensors
+    - media_player.man_cave_speaker
 
 
 googlehome_view:
@@ -67,6 +76,7 @@ Minis:
     - media_player.den_speaker
     - media_player.man_cave_speaker
     - media_player.master_bedroom_speaker
+    - media_player.hall_speaker
 
 ###################### MAN CAVE GROUPS #######################
 man_cave_sensors:
