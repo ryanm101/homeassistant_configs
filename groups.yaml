@@ -56,6 +56,12 @@ SecureIDs:
     - sensor.backroom_pir_sourcenodeid
     - sensor.man_cave_multisensor_sourcenodeid
 
+Heating:
+  entities:
+    - sensor.srt321manualthermostat_temperature
+    - climate.srt321manualthermostat_heating_1
+    - switch.srt321manualthermostat_switch
+
 Motion Sensors:
   entities:
     - binary_sensor.backroom_pir_sensor
@@ -65,6 +71,7 @@ Temperature Sensors:
   entities:
     - sensor.man_cave_multisensor_temperature
     - sensor.man_cave_multisensor_relative_humidity
+    - sensor.srt321manualthermostat_temperature
 
 Light Levels:
   entities:
