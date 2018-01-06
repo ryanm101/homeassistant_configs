@@ -55,6 +55,8 @@ SecureIDs:
     - sensor.door_sensor_1_sourcenodeid
     - sensor.backroom_pir_sourcenodeid
     - sensor.man_cave_multisensor_sourcenodeid
+    - sensor.fibaropir01_sourcenodeid
+    - sensor.fibarosmokealarm01_sourcenodeid
 
 Heating:
   entities:
@@ -66,12 +68,15 @@ Motion Sensors:
   entities:
     - binary_sensor.backroom_pir_sensor
     - binary_sensor.man_cave_multisensor_sensor
+    - binary_sensor.fibaropir01_sensor
 
 Temperature Sensors:
   entities:
     - sensor.man_cave_multisensor_temperature
     - sensor.man_cave_multisensor_relative_humidity
     - sensor.srt321manualthermostat_temperature
+    - sensor.fibaropir01_temperature
+    - sensor.fibarosmokealarm01_temperature
 
 Light Levels:
   entities:
@@ -84,7 +89,12 @@ Minis:
     - media_player.man_cave_speaker
     - media_player.master_bedroom_speaker
     - media_player.hall_speaker
+    - media_player.living_room_speaker
+    - media_player.kitchen_speaker
 
+Smoke Detectors:
+  entities:
+    - binary_sensor.fibarosmokealarm01_sensor
 ###################### MAN CAVE GROUPS #######################
 man_cave_sensors:
   name: Sensors
@@ -107,4 +117,14 @@ WallWart 3:
     - sensor.tkbhome_wallwart_3_power
     - sensor.tkbhome_wallwart_3_power_factor
     - sensor.tkbhome_wallwart_3_voltage
+
+WallWart 4:
+  name: Kitchen Kettle
+  entities:
+    - switch.tkbhome_wallwart_4_switch
+    - sensor.tkbhome_wallwart_4_current
+    - sensor.tkbhome_wallwart_4_energy
+    - sensor.tkbhome_wallwart_4_power
+    - sensor.tkbhome_wallwart_4_power_factor
+    - sensor.tkbhome_wallwart_4_voltage
 

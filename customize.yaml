@@ -15,3 +15,36 @@ sensor.man_cave_multisensor_sourcenodeid:
 group.secureids:
   hidden: true
 
+
+sensor.fibaropir01_alarm_level:
+  hidden: true
+sensor.fibaropir01_alarm_type:
+  hidden: true
+sensor.fibaropir01_burglar:
+  hidden: true
+sensor.fibaropir01_general:
+  hidden: true
+sensor.fibaropir01_luminance:
+  hidden: true
+sensor.fibaropir01_seismic_intensity:
+  hidden: true
+
+
+#smoke detector
+sensor.fibarosmokealarm01_alarm_level:
+  hidden: true
+sensor.fibarosmokealarm01_alarm_type:
+  hidden: true
+sensor.fibarosmokealarm01_burglar:
+  hidden: true
+sensor.fibarosmokealarm01_general:
+  hidden: true
+sensor.fibarosmokealarm01_heat:
+  hidden: true
+sensor.fibarosmokealarm01_power_management:
+  hidden: true
+sensor.fibarosmokealarm01_smoke:
+  hidden: true
+sensor.fibarosmokealarm01_system:
+  hidden: true
+

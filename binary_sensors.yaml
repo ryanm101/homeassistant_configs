@@ -1,0 +1,6 @@
+- platform: template
+  sensors:
+    kettle_on:
+      friendly_name: "Kettle Boiling"
+      value_template: >-
+        {{ states('sensor.tkbhome_wallwart_4_power')|float > 0 }}
