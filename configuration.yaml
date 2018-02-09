@@ -35,7 +35,7 @@ sun:
 
 zwave:
   usb_path: /dev/ttyACM0
-  network_key: !secret zw_netkey
+#  network_key: !secret zw_netkey
 
 weather:
   - platform: yweather

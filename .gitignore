@@ -1,0 +1,10 @@
+secrets.yaml
+.HA_VERSION
+.spotify*
+.uuid
+*.txt
+*.log
+*.db
+plex.conf
+options.xml
+*.sqlite
