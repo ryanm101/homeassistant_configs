@@ -98,3 +98,73 @@
   action:
     service: homeassistant.turn_on
     entity_id: automation.kettle_boiled
+
+#####################
+- alias: "Toast 1 Ready"
+  initial_state: 'off'
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.toaster_on
+      to: 'off'
+  action:
+    - service: tts.google_say
+      entity_id: media_player.allspeakers
+      data:
+        message: 'Toaster Side 1 has popped'
+
+- alias: "Toast 2 Ready"
+  initial_state: 'off'
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.toaster_all_on
+      to: 'off'
+  action:
+    - service: tts.google_say
+      entity_id: media_player.allspeakers
+      data:
+        message: 'Toaster Side 2 has popped'
+
+- alias: "Turn on Toast Side 1"
+  initial_state: 'on'
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.toaster_on
+      to: 'on'
+      for:
+        seconds: 30
+  action:
+    service: homeassistant.turn_on
+    entity_id: automation.toast_1_ready
+
+- alias: "Turn on Toast Side 2"
+  initial_state: 'on'
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.toaster_all_on
+      to: 'on'
+      for:
+        seconds: 30
+  action:
+    service: homeassistant.turn_on
+    entity_id: automation.toast_2_ready
+
+- alias: "Turn off Toast Side 1"
+  initial_state: 'on'
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.toaster_on
+      to: 'off'
+  action:
+    service: homeassistant.turn_off
+    entity_id: automation.toast_1_ready
+
+- alias: "Turn off Toast Side 2"
+  initial_state: 'on'
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.toaster_all_on
+      to: 'off'
+  action:
+    service: homeassistant.turn_off
+    entity_id: automation.toast_2_ready
+
