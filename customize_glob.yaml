@@ -4,7 +4,10 @@
   hidden: true
 
 # Wallwart Bedroom
-"sensor.aeotec_wallwart_*":
+"sensor.aeotec_wallwart_1*":
+  hidden: true
+
+"sensor.aeotec_wallwart_2*":
   hidden: true
 
 # Backroom PIR

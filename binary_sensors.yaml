@@ -4,3 +4,18 @@
       friendly_name: "Kettle Boiling"
       value_template: >-
         {{ states('sensor.tkbhome_wallwart_4_power')|float > 0 }}
+
+
+- platform: template
+  sensors:
+    toaster_on:
+      friendly_name: "Toaster on"
+      value_template: >-
+        {{ states('sensor.aeotec_wallwart_3_power')|float > 0 }}
+
+- platform: template
+  sensors:
+    toaster_all_on:
+      friendly_name: "Toaster all on"
+      value_template: >-
+        {{ states('sensor.aeotec_wallwart_3_power')|float > 850 }}

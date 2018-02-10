@@ -34,7 +34,7 @@ recorder:
 sun:
 
 zwave:
-  usb_path: /dev/ttyACM0
+  usb_path: /dev/ttyACM1
 #  network_key: !secret zw_netkey
 
 weather:
